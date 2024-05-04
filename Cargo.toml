@@ -1,0 +1,20 @@
+[package]
+name = "engoggle-api"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rust-faces = { version = "1.0.0", features = ["viz"] }
+tokio = { version = "1", features = ["full"] }
+eyre = "0.6.12"
+axum = { version = "0.7.5" , features = ["macros"]}
+image = "0.24.9"
+imageproc = "0.23.0"
+rand = "0.8.5"
+rand_chacha = "0.3.1"
+reqwest = { version = "0.12.4", features = ["rustls-tls"] }
+dotenv = "0.15.0"
+fatline-rs = { git = "https://www.github.com/0x330a-public/fatline-rs.git", rev = "97aaa570a7a252fb7267fa21f0e28ded07f917d5", features = ["client"] }
+ort = "1.16.3"
